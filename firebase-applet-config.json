@@ -1,0 +1,12 @@
+{
+  "projectId": "voterassistai",
+  "appId": "1:224417066589:web:aa3ee74f66baa230e467b4",
+  "apiKey": "AIzaSyBtpx2K4at3dQ4mB_gao7bOyX7ylY452Xk",
+  "authDomain": "voterassistai.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-fec1b192-ac2d-4a63-83dd-a4fb3669a5f6",
+  "storageBucket": "voterassistai.firebasestorage.app",
+  "messagingSenderId": "224417066589",
+  "measurementId": "",
+  "oAuthClientId": "224417066589-ecv8495rgj43epaton2nhn3jkett7297.apps.googleusercontent.com",
+  "recaptchaSiteKey": ""
+}

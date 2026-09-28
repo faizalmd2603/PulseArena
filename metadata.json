@@ -1,0 +1,6 @@
+{
+  "name": "PulseArena",
+  "description": "Interactive real-time game and event platform with live quizzes, AI quiz generator, dynamic animated podium, and emoji reactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

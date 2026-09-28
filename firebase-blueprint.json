@@ -1,0 +1,82 @@
+{
+  "entities": {
+    "events": {
+      "title": "Events",
+      "description": "Quiz and interactive presentation game sessions",
+      "type": "object",
+      "properties": {
+        "pin": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "host_id": { "type": "string" },
+        "status": { "type": "string" },
+        "current_question_index": { "type": "number" },
+        "phase": { "type": "string" },
+        "phase_start_time": { "type": "number" },
+        "created_at": { "type": "string" }
+      },
+      "required": ["pin", "title", "host_id", "status"]
+    },
+    "questions": {
+      "title": "Questions",
+      "description": "Questions and slides for an event",
+      "type": "object",
+      "properties": {
+        "event_id": { "type": "string" },
+        "question_order": { "type": "number" },
+        "question_type": { "type": "string" },
+        "prompt": { "type": "string" },
+        "options": { "type": "array" },
+        "correct_option_index": { "type": "number" },
+        "duration_seconds": { "type": "number" },
+        "multiplier": { "type": "number" },
+        "explanation": { "type": "string" }
+      },
+      "required": ["event_id", "question_order", "prompt"]
+    },
+    "participants": {
+      "title": "Participants",
+      "description": "Joined players in an event",
+      "type": "object",
+      "properties": {
+        "event_id": { "type": "string" },
+        "nickname": { "type": "string" },
+        "avatar_color": { "type": "string" },
+        "score": { "type": "number" },
+        "streak": { "type": "number" },
+        "last_answer_correct": { "type": "boolean" },
+        "last_points": { "type": "number" },
+        "last_active": { "type": "number" }
+      },
+      "required": ["event_id", "nickname"]
+    },
+    "responses": {
+      "title": "Responses",
+      "description": "Answers submitted by players per question",
+      "type": "object",
+      "properties": {
+        "event_id": { "type": "string" },
+        "question_id": { "type": "string" },
+        "participant_id": { "type": "string" },
+        "selected_option": { "type": "number" },
+        "is_correct": { "type": "boolean" },
+        "time_taken_ms": { "type": "number" },
+        "points_awarded": { "type": "number" },
+        "timestamp": { "type": "number" }
+      },
+      "required": ["event_id", "question_id", "participant_id"]
+    },
+    "reactions": {
+      "title": "Reactions",
+      "description": "Floating emoji reactions",
+      "type": "object",
+      "properties": {
+        "event_id": { "type": "string" },
+        "emoji": { "type": "string" },
+        "nickname": { "type": "string" },
+        "timestamp": { "type": "number" }
+      },
+      "required": ["event_id", "emoji"]
+    }
+  }
+}
